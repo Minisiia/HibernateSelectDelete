@@ -6,7 +6,7 @@ import org.jboss.logging.Logger;
 import java.util.List;
 
 /**
- * Из пакета ex_002_select_where написать отдельный метод для выборки по поиску выражения
+ * ex_002_select_where написать отдельный метод для выборки по поиску выражения
  * и в пакете ex_003_delete методы createCriteria и createCriteriaLogic переписать правильно.
  */
 public class Main {
@@ -20,7 +20,7 @@ public class Main {
         System.out.println((char) 27 + "[34m" + "Selection by last name:" + (char) 27 + "[38m");
         for (Author author : authorList)
             LOG.info(author.getId() + " " + author.getName() + " " + author.getLastName());
-        authorList = ah.getAuthorFirstLastNameRegEx("%a%");
+        authorList = ah.getAuthorFirstNameRegEx("%a%");
         System.out.println((char) 27 + "[34m" + "Selection by first name:" + (char) 27 + "[38m");
         for (Author author : authorList)
             LOG.info(author.getId() + " " + author.getName() + " " + author.getLastName());

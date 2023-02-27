@@ -3,6 +3,7 @@ package select_delete.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "author_delete")
 public class Author {
 
     @Id

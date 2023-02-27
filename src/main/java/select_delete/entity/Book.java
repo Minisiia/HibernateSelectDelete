@@ -1,11 +1,9 @@
 package select_delete.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "book_delete")
 public class Book {
 
     @Id

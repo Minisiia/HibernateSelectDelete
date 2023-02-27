@@ -78,7 +78,7 @@ public class AuthorHelper {
         return authorList;
     }
 
-    public List<Author> First(String regex) {
+    public List<Author> getAuthorFirstNameRegEx(String regex) {
         Session session = sessionFactory.openSession();
 // этап подготовки запроса
         // объект-конструктор запросов для Criteria API
